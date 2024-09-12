@@ -5,37 +5,37 @@ using namespace std;
 class employee {
   public: 
 
-    employee() {
+    employee() { // employee default constructor 
 
     }
 
-    employee(string myName, int myId) {
+    employee(string myName, int myId) { // parameterized constructor 
       name = myName; 
       id = myId; 
     }
   
-    string getName() {
+    string getName() { // getter for name 
       return name;
     }
 
-    int getID() {
+    int getID() { // getter for ID
       return id;
     }
 
-    void setName(string myName) {
+    void setName(string myName) { // setter for name
       name = myName;
     }
 
-    void setID(int myId) {
+    void setID(int myId) { // setter for ID
       id = myId;
     }
 
-    void display() {
+    void display() { // display function which outputs attributes of employee object 
       cout << "Name: " << name << "\nID: " << id << endl;
     }
 
 
   private: 
-    string name; 
-    int id;
+    string name;  // private variable name 
+    int id; // private variable ID
 };
